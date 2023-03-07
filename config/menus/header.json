@@ -1,0 +1,44 @@
+{
+  "id": "header",
+  "class": "header",
+  "containers": [
+    {
+      "id": "logo",
+      "items": [
+        {
+          "type": "image",
+          "src": "assets/img/cta-logo.png",
+          "label": "chicago-logo"
+        }
+      ],
+      "name": "logo"
+    },
+    {
+      "id": "tabs",
+      "items": [
+        {
+          "type": "link",
+          "style": {},
+          "text": "Office",
+          "url": "/office"
+        },
+        {
+          "type": "link",
+          "style": {},
+          "text": "Network",
+          "url": "/network"
+        }
+      ],
+      "name": "tabs"
+    },
+    {
+      "id": "user",
+      "items": [
+        {
+          "type": "username"
+        }
+      ],
+      "name": "user"
+    }
+  ]
+}

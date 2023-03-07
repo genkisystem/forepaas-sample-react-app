@@ -1,0 +1,2 @@
+import FpDynamicParameterSelectbox from './FpDynamicParameterSelectbox.jsx'
+export default FpDynamicParameterSelectbox

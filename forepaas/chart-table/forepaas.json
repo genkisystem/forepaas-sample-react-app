@@ -1,0 +1,67 @@
+{
+  "name": "Chart table",
+  "version": "2.1.0",
+  "description": "L’un des graphes les plus utilisés. Il permet une représentation en tableau.",
+  "icon": "fa fa-table",
+  "main": "index.js",
+  "type": "chart",
+  "displays": [
+    {
+      "id": "table",
+      "name": "Html - Table",
+      "category": "table",
+      "icon": "fpui fpui-table-chart",
+      "description": ""
+    }
+  ],
+  "options": {
+    "searchable": {
+      "type": "toggle",
+      "label": "searchable"
+    },
+    "theme": {
+      "type": "input-text",
+      "label": "theme"
+    },
+    "headerHeight": {
+      "type": "number",
+      "label": "headerHeight"
+    },
+    "rowHeight": {
+      "type": "number",
+      "label": "rowHeight"
+    },
+    "padding": {
+      "type": "number",
+      "label": "padding"
+    },
+    "i18n": {
+      "label": "translations",
+      "type": "translations"
+    }
+  },
+  "i18n": {
+    "fr": {
+      "long_description": "L’un des graphes les plus utilisés. Il permet une représentation en tableau. Vous pouvez filtrer vos résultats ou encore rangé les différentes colonnes par ordre croissant.",
+      "name": "Chart table",
+      "description": "L’un des graphes les plus utilisés. Il permet une représentation en tableau."
+    },
+    "en": {
+      "description": "One of the most used chart. It will represent your data in a table.",
+      "name": "Chart table",
+      "long_description": "One of the most used chart. It will represent your data in a table. You will be able to filter the result or even sort it by the column of your choosing"
+    }
+  },
+  "npmDependencies": {
+    "react-data-grid": "^4.0.7",
+    "lodash": "^4.17.4",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "formatter": {},
+    "translate": {}
+  },
+  "long_description": "One of the most used chart. It will represent your data in a table. You will be able to filter the result or even sort it by the column of your choosing",
+  "category": "Other",
+  "repository": "https://gitlab.forepaas.com/open-sources/fapp-mod-chart-table.git"
+}

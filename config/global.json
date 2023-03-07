@@ -1,0 +1,30 @@
+{
+  "authentication": "{{ENV.CAM_URL}}",
+  "api": "{{ENV.API_URL}}",
+  "application_name": "{{ENV.APP_NAME || 'ForePaaS'}}",
+  "debug": "{{ENV.DEBUG}}",
+  "loader": "spinner",
+  "lang": "en",
+  "timezone": "UTC",
+  "version": 3,
+  "storage": {
+    "type": "sessionStorage"
+  },
+  "root": "/office",
+  "menu": [
+    "file://config/menus/header.json",
+    "file://config/menus/sidebar.json"
+  ],
+  "dashboarding": {
+    "/rides-analytics": "file://config/dashboards/rides-analytics.json",
+    "/office": "file://config/dashboards/office.json",
+    "/network": "file://config/dashboards/network.json"
+  },
+  "style": "file://config/style.json",
+  "i18n": {
+    "en": "file://config/i18n/en.json",
+    "fr": "file://config/i18n/fr.json"
+  },
+  "formatter": "file://config/formatter.json",
+  "templates": "file://config/templates.json"
+}

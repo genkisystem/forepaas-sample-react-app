@@ -1,0 +1,109 @@
+.fp-month-range-picker {
+  display: block;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+  .month-picker {
+    width: 280px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    color: rgb(0, 0, 0);
+    .month-picker-year {
+      .month-picker-year-wrapper {
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 12px;
+        padding: 10px 0px;
+        height: 38px;
+        line-height: 18px;
+        .month-picker-button {
+          display: block;
+          box-sizing: border-box;
+          height: 18px;
+          width: 18px;
+          padding: 0px;
+          margin: 0px 10px;
+          border: none;
+          background: rgb(189, 195, 199);
+          box-shadow: none;
+          outline: none;
+          border-radius: 50%;
+          .month-picker-icon {
+            display: block;
+            width: 0px;
+            height: 0px;
+            padding: 0px;
+            border-style: solid;
+            border-image: initial;
+            text-align: center;
+          }
+          &.prev {
+            float: left;
+            .month-picker-icon {
+              border-width: 4px 6px 4px 4px;
+              border-color: transparent rgb(52, 73, 94) transparent transparent;
+              margin: 0px 0px 0px 1px;
+            }
+            &.disabled {
+              .month-picker-icon {
+                border-color: transparent #AAA transparent transparent;
+              }
+            }
+          }
+          &.next {
+            float: right;
+            .month-picker-icon {
+              border-width: 4px 4px 4px 6px;
+              border-color: transparent transparent transparent rgb(52, 73, 94);
+              margin: 0px 0px 0px 7px;
+            }
+            &.disabled {
+              .month-picker-icon {
+                border-color: transparent transparent transparent #AAA;
+              }
+            }
+          }
+          &.disabled {
+            cursor: not-allowed;
+            background-color: #DDD;
+          }
+        }
+      }
+    }
+
+    .month-picker-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 25px;
+      .month-picker-list-item {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        padding: 5px;
+        margin: 1px;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: transform 0.1s ease;
+        &.disabled {
+          color: #ccc;
+          cursor: default;
+        }
+        &:not(.disabled):hover {
+          background-color: rgb(189, 195, 199);
+        }
+        &.active {
+          background: rgb(231, 76, 60);
+          color: white;
+        }
+        &.in-range {
+          background: rgb(52, 73, 94);
+          color: rgb(149, 165, 166);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "formatter",
+  "version": "1.3.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sdk": {}
+  },
+  "npmDependencies": {
+    "lodash": "^4.17.4",
+    "moment": "2.29.1",
+    "moment-timezone": "0.5.31"
+  }
+}

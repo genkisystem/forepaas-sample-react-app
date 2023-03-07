@@ -1,0 +1,10 @@
+{
+  "name": "xhr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "npmDependencies": {
+    "axios": "^0.16.2"
+  },
+  "dependencies": {}
+}

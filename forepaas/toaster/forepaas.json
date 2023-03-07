@@ -1,0 +1,15 @@
+{
+  "name": "toaster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sdk": {},
+    "translate": {}
+  },
+  "npmDependencies": {
+    "lodash": "^4.17.4",
+    "react": "^16.0.0",
+    "react-toastify": "2.2.1"
+  }
+}

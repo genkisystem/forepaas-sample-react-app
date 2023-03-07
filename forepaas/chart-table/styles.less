@@ -1,0 +1,95 @@
+.fp-table.fp-table-standard {
+  height:100%;
+  position: relative;
+  .fp-row {
+    .fp-cell {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      position: relative;
+      i {
+        position: absolute;
+        right:5px;
+        top:50%;
+        background:white;
+        transform:translateY(-50%);
+        z-index: 2;
+      }
+    }
+  }
+
+  .fp-row:nth-child(even) {
+    background:rgba(0, 0, 0, .02);
+    border-bottom:1px solid #e5e8eb;
+  }
+
+  .fp-head {
+    position:absolute;
+    top:0px;
+    left:0;
+    right:0;
+    .fp-cell-is-sortable {
+      cursor:pointer;
+    }
+    .fp-row {
+      height:100%;
+      border-bottom:2px solid #eee;
+    }
+  }
+
+  .fp-body {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow: auto;
+    .fp-cell-sort {
+      background:rgba(0,0,0,0.03);
+    }
+  }
+  .fp-content {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:white;
+    border-radius:3px;
+  }
+}
+
+.fp-table.fp-table-search.fp-table-standard {
+  .fp-content {
+    top:40px;
+  }
+  .fp-search {
+    z-index:2;
+    position: absolute;
+    right:0;
+    height:40px;
+    top:0px;
+    width:150px;
+    border:#ddd solid;
+    border-width: 1px 1px 1px 1px;
+    background:white;
+    i {
+      position: absolute;
+      z-index: 2;
+      left:3px;
+      top:3px;
+      font-size:25px;
+    }
+    input {
+      position: absolute;
+      width:100%;
+      left:0;
+      right:0;
+      border:0;
+      outline:none;
+      padding-left:30px;
+      top:0;
+      bottom:0;
+    }
+  }
+}

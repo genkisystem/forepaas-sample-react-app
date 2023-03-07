@@ -1,0 +1,167 @@
+{
+  "name": "google-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "chart",
+  "displays": [
+    {
+      "id": "google-chart.line",
+      "name": "Google Chart - Line",
+      "category": "line",
+      "icon": "fpui fpui-line-chart",
+      "description": ""
+    },
+    {
+      "id": "google-chart.area",
+      "category": "area",
+      "icon": "fpui fpui-area-chart",
+      "name": "Google Chart - Area",
+      "description": "Aire simple"
+    },
+    {
+      "id": "google-chart.stepped",
+      "category": "area",
+      "icon": "fpui fpui-area-chart",
+      "name": "Google Chart - Stepped Area",
+      "description": "Aire sous forme d'étape"
+    },
+    {
+      "id": "google-chart.candlestick",
+      "category": "candlestick",
+      "icon": "fpui fpui-scatter-chart",
+      "name": "Google Chart - Candlestick",
+      "description": "Candlestick"
+    },
+    {
+      "id": "google-chart.column",
+      "category": "column",
+      "icon": "fpui fpui-column-chart",
+      "name": "Google Chart - Column",
+      "description": "Colonnes simple"
+    },
+    {
+      "id": "google-chart.scatter",
+      "category": "scatter",
+      "icon": "fpui fpui-scatter-chart",
+      "name": "Google Chart - Scatter",
+      "description": "Scatter simple"
+    },
+    {
+      "id": "google-chart.bar",
+      "category": "bar",
+      "icon": "fpui fpui-bar-chart",
+      "name": "Google Chart - Bar",
+      "description": "Bar simple"
+    },
+    {
+      "id": "google-chart.histogram",
+      "category": "column",
+      "icon": "fpui fpui-column-chart",
+      "name": "Google Chart - Histogram",
+      "description": ""
+    },
+    {
+      "id": "google-chart.pie",
+      "name": "Google Chart - Pie",
+      "category": "pie",
+      "icon": "fpui fpui-pie-chart",
+      "description": ""
+    },
+    {
+      "id": "google-chart.donut",
+      "category": "pie",
+      "icon": "fpui fpui-donut-chart",
+      "name": "Google Chart - Donut",
+      "description": "Donut"
+    },
+    {
+      "id": "google-chart.gauge",
+      "category": "gauge",
+      "icon": "fpui fpui-gauge",
+      "name": "Google Chart - Gauge",
+      "description": "Gauge"
+    },
+    {
+      "id": "google-chart.tree",
+      "category": "tree",
+      "icon": "fpui fpui-tree-chart",
+      "name": "Google Chart - Tree",
+      "description": "Tree"
+    }
+  ],
+  "i18n": {
+    "fr": {
+      "chart": "Graphe",
+      "type": "Type",
+      "title": "Titre",
+      "subtitle": "Sous titre",
+      "text": "Texte",
+      "style": "Style",
+      "color": "Couleur",
+      "colors": "Couleurs",
+      "fontFamily": "Police",
+      "fontSize": "Taille",
+      "fontWeight": "Type",
+      "legend": "Légende",
+      "enabled": "Actif",
+      "background-color": "Couleur de fond"
+    },
+    "en": {
+      "chart": "Graph",
+      "type": "Type",
+      "title": "Title",
+      "subtitle": "Subtitle",
+      "text": "Text",
+      "style": "Style",
+      "color": "Color",
+      "colors": "Colors",
+      "fontFamily": "Police",
+      "fontSize": "Size",
+      "fontWeight": "Type",
+      "legend": "Legend",
+      "enabled": "Actif",
+      "background-color": "Background color"
+    }
+  },
+  "moduleOptions": {},
+  "options": {
+    "title": {
+      "type":"input-text",
+      "label":"Title"
+    },
+    "colors": {
+      "label": "colors",
+      "type": "array",
+      "options": {
+        "type": "color-picker",
+        "default": "#000"
+      }
+    },
+    "backgroundColor":{
+      "type":"color-picker",
+      "label": "background-color"
+    },
+    "fontSize":{
+      "label":"fontSize",
+      "type":"input-text",
+      "default":10
+    },
+    "fontName":{
+      "label": "fontName",
+      "default":"Arial",
+      "type":"input-text"
+    }
+  },
+  "dependencies": {
+    "core-ui": {},
+    "formatter": {},
+    "sdk": {},
+    "translate": {}
+  },
+  "npmDependencies": {
+    "lodash": "^4.17.4",
+    "react": "^16.0.0",
+    "react-google-charts": "^3.0.6"
+  }
+}

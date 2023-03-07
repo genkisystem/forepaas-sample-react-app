@@ -1,0 +1,76 @@
+{
+  "name": "Office",
+  "url": "/office",
+  "path": "",
+  "type": "dashboard",
+  "description": "",
+  "controller": "",
+  "width": 100,
+  "height": 100,
+  "margin": [
+    10,
+    10
+  ],
+  "tags": [],
+  "id": "newChart-4285138",
+  "items": [
+    {
+      "type": "panel",
+      "items": [
+        {
+          "type": "html",
+          "content": "Environment",
+          "sizeX": 36,
+          "sizeY": 9,
+          "row": 0,
+          "col": 0
+        },
+        {
+          "type": "tabs",
+          "items": [
+            {
+              "type": "chart",
+              "chart": {
+                "id": "chart-9673665",
+                "component": "table",
+                "request": {
+                  "data": {
+                    "fields": {
+                      "device_identifer": [
+                        "select"
+                      ],
+                      "timestamp": [
+                        "select"
+                      ],
+                      "temperature": [
+                        "select"
+                      ]
+                    }
+                  },
+                  "scale": {
+                    "fields": []
+                  },
+                  "filter": {},
+                  "order": {}
+                },
+                "options": {}
+              },
+              "sizeX": 4,
+              "sizeY": 4,
+              "col": 0,
+              "row": 0
+            }
+          ],
+          "sizeX": 58,
+          "sizeY": 49,
+          "row": 9,
+          "col": 0
+        }
+      ],
+      "sizeX": 97,
+      "sizeY": 84,
+      "row": 0,
+      "col": 0
+    }
+  ]
+}

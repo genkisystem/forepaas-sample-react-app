@@ -1,0 +1,50 @@
+{
+  "selectbox": {
+    "input": {
+      "height": 26
+    },
+    "indicatorsContainer": {
+      "height": 34
+    },
+    "dropdownIcon": {
+      "fontSize": 12,
+      "padding": 10
+    },
+    "control": {
+      "fontSize": 12,
+      "borderRadius": 5,
+      "maxHeight": 36,
+      "height": 36,
+      "minHeight": 0,
+      "padding": 0,
+      "borderColor": "lightGrey",
+      "boxShadow": "none!important"
+    },
+    "multiValue": {
+      "backgroundColor": "#ff5400",
+      "borderRadius": 5,
+      "height": 26,
+      "color": "white"
+    },
+    "multiValueLabel": {
+      "lineHeight": "20px",
+      "color": "white"
+    },
+    "optionsSelected": {
+      "background": "lightGrey",
+      "color": "#ffffff"
+    },
+    "optionsFocused": {
+      "background": "white",
+      "fontSize": 16,
+      "fontWeight": 700
+    },
+    "menuList": {
+      "padding": 0
+    },
+    "menu": {
+      "margin": 0,
+      "fontSize": 12
+    }
+  }
+}

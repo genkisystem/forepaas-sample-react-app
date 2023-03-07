@@ -1,0 +1,138 @@
+@primaryColor:#10B6E9;
+@hoverColor:#E6F8FD;
+@hoverColorOpacity:rgba(230,248,253,0.7);
+
+.fpui-edit-menu-options-dropdown {
+  position: fixed;
+  left: -1000px;
+  top: -1000px;
+  background:white;
+  display: block;
+  color:@primaryColor;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  font-size:14px;
+  list-style:none;
+  z-index: 1000000;
+  width:120px;
+  margin:0;
+  padding:0;
+  .duplicate-handler, .delete-handler {
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+  }
+  li:hover {
+    background:@primaryColor;
+    color:white;
+  }
+}
+
+
+.fp-container-edit-options {
+  text-align: center;
+  position: absolute;
+  z-index: 13000;
+  background: @hoverColorOpacity;
+  .handler {
+    display: inline-block;
+    color:@primaryColor;
+    position: relative;
+    line-height:40px;
+    font-size:24px;
+    width:40px;
+    height:40px;
+    font-weight:500;
+    cursor:pointer;
+    &:hover {
+      background-color:@primaryColor;
+      color:white;
+    }
+    &.disabled {
+      background-color: transparent;
+      color: grey;
+      cursor: not-allowed;
+    }
+  }
+  .more-handler,.add-handler {
+    .fpui-edit-options-dropdown {
+      display: none;
+      position: absolute;
+      background:white;
+      color:@primaryColor;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+      font-size:14px;
+      list-style:none;
+      width:120px;
+      margin:0;
+      padding:0;
+      li:hover {
+        background:@primaryColor;
+        color:white;
+      }
+    }
+    &:hover {
+      .fpui-edit-options-dropdown {
+        display: block;
+      }
+    }
+  }
+  &.vertical {
+    .handler {
+      display: block;
+    }
+  }
+}
+
+.fp-container {
+  .fp-edit-container {
+    border-radius: 4px;
+    position: relative;
+    .fp-edit-options {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      .fp-edit-options-hover {
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        left: 5px;
+        position: absolute;
+        background: @hoverColorOpacity;
+        transition:opacity 0.3s;
+        .fp-edit-options-hover-icons {
+          display: inline-block;
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          left: 0;
+          text-align: center;
+          transform: translateY(-50%);
+          height: 40px;
+          .handler {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size:24px;
+            color:@primaryColor;
+            background-color: @hoverColorOpacity;
+            cursor: pointer;
+            &:hover {
+              background-color:@primaryColor;
+              color:white;
+            }
+          }
+          .more-handler {
+          }
+        }
+      }
+    }
+  }
+}

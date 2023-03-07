@@ -1,0 +1,19 @@
+{
+  "name": "client-authority-manager",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "core-ui": {},
+    "sdk": {},
+    "store": {},
+    "toaster": {},
+    "translate": {},
+    "xhr": {}
+  },
+  "npmDependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0"
+  }
+}

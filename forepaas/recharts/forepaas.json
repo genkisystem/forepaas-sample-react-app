@@ -1,0 +1,476 @@
+{
+  "name": "Rechart",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "type": "chart",
+  "displays": [
+    {
+      "id": "recharts",
+      "name": "Recharts",
+      "category": "line",
+      "icon": "fpui fpui-line-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.area",
+      "name": "Recharts - Area",
+      "category": "area",
+      "icon": "fpui fpui-area-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.scatter",
+      "name": "Recharts - Scatter",
+      "category": "area",
+      "icon": "fpui fpui-scatter-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.area-percent",
+      "name": "Recharts - Area Percent",
+      "category": "area",
+      "icon": "fpui fpui-area-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "object",
+          "options": {
+            "series": {
+              "label": "Chart",
+              "type": "array",
+              "options": {
+                "type": "object",
+                "options": {
+                  "fill": {
+                    "label": "fill",
+                    "type": "color-picker"
+                  },
+                  "stroke": {
+                    "label": "stroke",
+                    "type": "color-picker"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.bar",
+      "name": "Recharts - Bar",
+      "category": "bar",
+      "icon": "fpui fpui-column-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              },
+              "barGap": {
+                "label": "barGap",
+                "type": "number"
+              },
+              "barSize": {
+                "label": "barSize",
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.bar-percent",
+      "name": "Recharts - Bar Percent",
+      "category": "bar",
+      "icon": "fpui fpui-column-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              },
+              "barGap": {
+                "label": "barGap",
+                "type": "number"
+              },
+              "barSize": {
+                "label": "barSize",
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.bar-horizontal",
+      "name": "Recharts - Bar Horizontal",
+      "category": "bar",
+      "icon": "fpui fpui-bar-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              },
+              "barGap": {
+                "label": "barGap",
+                "type": "number"
+              },
+              "barSize": {
+                "label": "barSize",
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.donut",
+      "name": "Recharts - Donut",
+      "category": "pie",
+      "icon": "fpui fpui-donut-chart",
+      "description": "",
+      "options": {
+        "colors": {
+          "label": "Colors",
+          "type": "array",
+          "default": [
+            "#00CCF9",
+            "#B18BFF",
+            "#9EDF10",
+            "#FF6F90",
+            "#FACD30",
+            "#61DDA8",
+            "#0089C0"
+          ],
+          "options": {
+            "type": "color-picker",
+            "default": "#000"
+          }
+        },
+        "series": {
+          "label": "Donut",
+          "type": "object",
+          "options": {
+            "interval": {
+              "label": "interval",
+              "type": "number"
+            },
+            "labelLine": {
+              "label": "labelLine",
+              "type": "toggle"
+            },
+            "innerRadius": {
+              "label": "innerRadius",
+              "type": "number"
+            },
+            "outerRadius": {
+              "label": "outerRadius",
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.line",
+      "name": "Recharts - Line",
+      "category": "line",
+      "icon": "fpui fpui-line-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "recharts.pie",
+      "name": "Recharts - Pie",
+      "category": "pie",
+      "icon": "fpui fpui-pie-chart",
+      "description": "",
+      "options": {
+        "series": {
+          "label": "Chart",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "fill": {
+                "label": "fill",
+                "type": "color-picker"
+              },
+              "stroke": {
+                "label": "stroke",
+                "type": "color-picker"
+              },
+              "barGap": {
+                "label": "barGap",
+                "type": "number"
+              },
+              "barSize": {
+                "label": "barSize",
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "i18n": {
+    "fr": {},
+    "en": {}
+  },
+  "moduleOptions": {},
+  "options": {
+    "legend": {
+      "toggle": true,
+      "label": "Legend",
+      "type": "object",
+      "options": {
+        "hide": {
+          "label": "Hide",
+          "type": "toggle"
+        },
+        "verticalAlign": {
+          "label": "verticalAlign",
+          "type": "select-box",
+          "options": [
+            {
+              "label": "Top",
+              "value": "top"
+            },
+            {
+              "label": "Middle",
+              "value": "middle"
+            },
+            {
+              "label": "Bottom",
+              "value": "bottom"
+            }
+          ]
+        },
+        "align": {
+          "label": "align",
+          "type": "select-box",
+          "options": [
+            {
+              "label": "Left",
+              "value": "left"
+            },
+            {
+              "label": "Center",
+              "value": "center"
+            },
+            {
+              "label": "Right",
+              "value": "right"
+            }
+          ]
+        }
+      }
+    },
+    "xAxis": {
+      "label": "xAxis",
+      "type": "object",
+      "options": {
+        "hide": {
+          "type": "toggle",
+          "label": "Hide"
+        },
+        "type": {
+          "label": "Type",
+          "type": "select-box",
+          "options": [
+            {
+              "label": "number",
+              "value": "number"
+            },
+            {
+              "label": "category",
+              "value": "category"
+            }
+          ]
+        },
+        "tickStyle": {
+          "label": "Label",
+          "type": "object",
+          "options": {
+            "fontSize": {
+              "label": "Font Size",
+              "type": "number"
+            },
+            "x": {
+              "label": "xOffset",
+              "type": "number"
+            },
+            "y": {
+              "label": "yOffset",
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "yAxis": {
+      "label": "yAxis",
+      "type": "object",
+      "options": {
+        "hide": {
+          "type": "toggle",
+          "label": "Hide"
+        },
+        "type": {
+          "label": "Type",
+          "type": "select-box",
+          "options": [
+            {
+              "label": "number",
+              "value": "number"
+            },
+            {
+              "label": "category",
+              "value": "category"
+            }
+          ]
+        },
+        "tickStyle": {
+          "label": "Label",
+          "type": "object",
+          "options": {
+            "fontSize": {
+              "label": "Font Size",
+              "type": "number"
+            },
+            "x": {
+              "label": "xOffset",
+              "type": "number"
+            },
+            "y": {
+              "label": "yOffset",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "formatter": {},
+    "sdk": {},
+    "translate": {}
+  },
+  "npmDependencies": {
+    "recharts": "^1.6.2",
+    "lodash": "^4.17.4"
+  }
+}

@@ -1,0 +1,2 @@
+import FpDynamicParameterDatepicker from './FpDynamicParameterDatepicker.jsx'
+export default FpDynamicParameterDatepicker

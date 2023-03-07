@@ -1,0 +1,19 @@
+{
+  "name": "animation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "npmDependencies": {
+    "react-router-transition": "^1.1.1"
+  },
+  "dependencies": {},
+  "i18n": {
+    "fr": {
+      "name": "animation"
+    },
+    "en": {
+      "name": "animation"
+    }
+  },
+  "category": "Design",
+  "repository": "https://gitlab.forepaas.com/open-sources/fapp-mod-animation.git"
+}

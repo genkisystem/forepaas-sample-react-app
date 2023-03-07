@@ -1,0 +1,26 @@
+{
+  "name": "Api",
+  "version": "1.0.0",
+  "description": "Permet de faire des requêtes à l’Api de votre application front-end.",
+  "main": "index.js",
+  "dependencies": {
+    "sdk": {},
+    "xhr": {}
+  },
+  "npmDependencies": {},
+  "long_description": "Make request to your API. It is mainly used by the Query Builder to get all the data necessary for your Charts or Dynamic Parameters.",
+  "i18n": {
+    "fr": {
+      "long_description": "Cette extension vous permettra de faire des requêtes à votre api. Il est principalement utilisé par le Query Builder pour retrouver les données correspondant à vos graphiques.",
+      "name": "Api",
+      "description": "Permet de faire des requêtes à l’Api de votre application front-end."
+    },
+    "en": {
+      "description": "Make request to your API. It is mainly used by the Query Builder to get all the data necessary for your Charts or Dynamic Parameters.",
+      "name": "Api",
+      "long_description": "Make request to your API. It is mainly used by the Query Builder to get all the data necessary for your Charts or Dynamic Parameters."
+    }
+  },
+  "category": "Other",
+  "repository": "https://gitlab.forepaas.com/open-sources/fapp-mod-api.git"
+}

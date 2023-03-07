@@ -1,0 +1,384 @@
+@primaryColor:#10B6E9;
+@hoverColor:#E6F8FD;
+@hoverColorOpacity:rgba(230,248,253,0.6);
+
+.fp-root-edit-options {
+  text-align: center;
+  position: fixed;
+  left:50%;
+  top:5px;
+  z-index: 13000;
+  transform:translateX(-50%);
+  background: @hoverColorOpacity;
+  .handler {
+    display: inline-block;
+    color:@primaryColor;
+    position: relative;
+    line-height:40px;
+    font-size:24px;
+    width:40px;
+    height:40px;
+    font-weight:500;
+    cursor:pointer;
+    &:hover {
+      background-color:@primaryColor;
+      color:white;
+    }
+    &.disabled {
+      background-color: transparent;
+      color: grey;
+      cursor: not-allowed;
+    }
+  }
+  .user-handler {
+    white-space: nowrap;
+  }
+  .user-handler-icon {
+    width:10px;
+    margin-right:5px;
+    border-radius:100%;
+    height:10px;
+    display:inline-block;
+  }
+  .more-handler,.add-handler {
+    .fpui-edit-options-dropdown {
+      display: none;
+      position: absolute;
+      background:white;
+      color:@primaryColor;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+      font-size:14px;
+      list-style:none;
+      width:120px;
+      margin:0;
+      padding:0;
+      li:hover {
+        background:@primaryColor;
+        color:white;
+      }
+    }
+    &:hover {
+      .fpui-edit-options-dropdown {
+        display: block;
+      }
+    }
+  }
+}
+.fp-edit {
+  border-radius: 4px;
+
+  &:hover {
+    > .fp-edit-options .fp-edit-options-hover {
+      display: block;
+    }
+  }
+  
+  .fp-edit-options {
+    position: absolute;
+    left:0;
+    z-index: 14000;
+    right:0;
+    top:0;
+    bottom:0;
+    .user-editing {
+      font-size: 14px;
+      color: #00dece;
+      margin-left: 3px;
+      display: none;
+    }
+    
+    .fp-edit-options-hover {
+      background: @hoverColorOpacity;
+      position: absolute;
+      left:0;
+      right:0;
+      top:0%;
+      display: none;
+      transition:opacity 0.3s;
+      height:100%;
+      text-align:center;
+
+      .fp-edit-options-hover-icons {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        .handler {
+          display: inline-block;
+          color:@primaryColor;
+          line-height:40px;
+          font-size:24px;
+          width:40px;
+          height:40px;
+          font-weight:500;
+          cursor:pointer;
+          &:hover {
+            background-color:@primaryColor;
+            color:white;
+          }
+        }
+        .add-handler {
+          display: none;
+        }
+        .move-handler {
+          cursor:move;
+          display:none;
+        }
+        .more-handler,.add-handler {
+          .fpui-edit-options-dropdown {
+            display: none;
+            position: absolute;
+            background:white;
+            color:@primaryColor;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+            font-size:14px;
+            list-style:none;
+            width:120px;
+            margin:0;
+            padding:0;
+            li:hover {
+              background:@primaryColor;
+              color:white;
+            }
+          }
+          &:hover {
+            .fpui-edit-options-dropdown {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &.fp-edit-options-resizable {
+      .fp-edit-options-hover .fp-edit-options-hover-icons .move-handler {
+        display:inline-block;
+      }
+    }
+    &.fp-edit-options-have-child {
+      .fp-edit-options-hover .fp-edit-options-hover-icons .add-handler {
+        display: inline-block;
+      }
+    }
+    &:not(.fp-edit-options-editable), &.fp-edit-options-switch {
+      left:50%;
+      right:50%;
+      top:0px;
+      bottom:auto;
+
+      .fp-edit-options-hover {
+        position: static;
+        width:120px;
+        height:40px;
+        transform:translateX(-50%);
+        .fp-edit-options-hover-icons {
+          width:100%;
+          height:100%;
+          top:0;
+          left:0;
+          transform:none;
+          font-size:0px;
+          .edit-handler {
+            display: none;
+          }
+        }
+      }
+    }
+    &.fp-edit-options-switch {
+      top: -20px;
+      .fp-edit-options-hover {
+        width:120px;
+        .add-handler {
+          display: none !important;
+        }
+      }
+      .fp-edit-options-hover-icons {
+        .edit-handler {
+          display: inline-block !important;
+        }
+      }
+    }
+  }
+
+  .fp-edit-cursor {
+    position:absolute;
+    font-size:10px;
+    width:25px;
+    display:none;
+    height:25px;
+    color:@primaryColor;
+    z-index:13000;
+    &.right {
+      right:0;
+      top:50%;
+      transform:translateY(-50%);
+    }
+    &.bottom {
+      left:50%;
+      bottom:0;
+      transform:translateX(-50%);
+    }
+    &.bottom-right {
+      right:0;
+      bottom:0;
+    }
+    .icon {
+      &:after {
+        border-radius:100%;
+        width:8px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        height:8px;
+        content:"";
+        background: @primaryColor;
+      }
+    }
+    .icon-hover {
+      opacity:0;
+      font-size:20px;
+      background:@primaryColor;
+      color:white;
+      border-radius:100%;
+    }
+    .icon,.icon-hover {
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      line-height: 25px;
+      bottom:0;
+      text-align: center;
+    }
+    &:hover {
+      .icon {
+        opacity:0;
+      }
+      .icon-hover {
+        opacity:1;
+      }
+    }
+  }
+
+  &:hover > .fp-edit-cursor {
+    display:block;
+  }
+
+}
+
+.fp-edit-placeholder {
+  background: @hoverColor;
+}
+
+.fpui-edit-component-dropdown {
+  position: relative;
+  .dropdown-closed, .dropdown-open {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .dropdown-component-list {
+    position: absolute;
+    display: none;
+    right: -120px;
+    top: 0;
+    padding: 0;
+    background-color: white;
+    width: 120px;
+    list-style: none;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+    li {
+      color: @primaryColor;
+    }
+  }
+  .dropdown-open {
+    display: none;
+  }
+  &:hover {
+    .dropdown-open {
+      display: block;
+    }
+    .dropdown-closed {
+      display: none;
+    }
+    .dropdown-component-list {
+      display: block;
+    }
+  }
+}
+
+.tooltip-container {
+  position: relative;
+  .tooltip {
+    cursor: default;
+    font-size: 13px;
+    line-height: 20px;
+    display: none;
+    background-color: #FFF;
+    max-width: 130px;
+    color: @primaryColor;
+    border-radius: 0;
+    -moz-box-shadow: 0px 0px 10px 1px #e6e6e6;
+    -webkit-box-shadow: 0px 0px 10px 1px #e6e6e6;
+    -o-box-shadow: 0px 0px 10px 1px #e6e6e6;
+    box-shadow: 0px 0px 10px 1px #e6e6e6;
+    text-align: center;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #fff transparent;
+    }
+  }
+  &:hover {
+    .tooltip {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+.error-component {
+  text-align: center;
+  .tooltip-container {
+    p {
+      width: 100%;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .error-tooltip {
+      width: auto;
+      text-align: left;
+      max-width: initial;
+      color: red;
+    }
+  }
+}
+.fp-architect-read {
+  display: none!important;
+}
+
+.fp-architect-disable {
+  .fp-architect-tool {
+    display:none!important;
+  }
+
+  .fp-architect-read {
+    display: inline-block!important;
+  }
+
+}

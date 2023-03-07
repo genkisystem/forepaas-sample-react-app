@@ -1,0 +1,547 @@
+@fpui-plus: "\e900";
+@fpui-check-circle: "\e901";
+@fpui-power: "\e902";
+@fpui-ask: "\e903";
+@fpui-chevron-down-small: "\e904";
+@fpui-bell: "\e905";
+@fpui-cog: "\e906";
+@fpui-speaker: "\e907";
+@fpui-exclamation: "\e908";
+@fpui-exclamation-triangle: "\e909";
+@fpui-gauge: "\e90a";
+@fpui-note: "\e90b";
+@fpui-settings: "\e90c";
+@fpui-workflow: "\e90d";
+@fpui-target: "\e90e";
+@fpui-play: "\e90f";
+@fpui-pencil: "\e910";
+@fpui-trash: "\e911";
+@fpui-required: "\e912";
+@fpui-calendar: "\e913";
+@fpui-chevron-right: "\e914";
+@fpui-chevron-left: "\e915";
+@fpui-chevron-down: "\e916";
+@fpui-chevron-up: "\e917";
+@fpui-check: "\e918";
+@fpui-remove: "\e919";
+@fpui-agent: "\e91a";
+@fpui-leader: "\e91b";
+@fpui-information-circle: "\e91c";
+@fpui-refresh: "\e91d";
+@fpui-dots: "\e91e";
+@fpui-search: "\e91f";
+@fpui-collect: "\e920";
+@fpui-analyze: "\e921";
+@fpui-organize: "\e922";
+@fpui-folder-open: "\e923";
+@fpui-file: "\e924";
+@fpui-list: "\e925";
+@fpui-eye: "\e926";
+@fpui-eye-closed: "\e927";
+@fpui-folder: "\e928";
+@fpui-attachment: "\e929";
+@fpui-arrow-up: "\e92a";
+@fpui-padlock: "\e92b";
+@fpui-dots-o: "\e92c";
+@fpui-menu: "\e92d";
+@fpui-stages: "\e92e";
+@fpui-map: "\e92f";
+@fpui-link: "\e930";
+@fpui-language: "\e931";
+@fpui-palette: "\e932";
+@fpui-graph-chart: "\e933";
+@fpui-id-card: "\e934";
+@fpui-module: "\e935";
+@fpui-chart-pie-chart: "\e936";
+@fpui-html: "\e937";
+@fpui-panel: "\e938";
+@fpui-filter: "\e939";
+@fpui-formatter: "\e93a";
+@fpui-chart-padlock: "\e93b";
+@fpui-snapshot: "\e93c";
+@fpui-resize-vertical: "\e93d";
+@fpui-resize-horizontal: "\e93e";
+@fpui-expand-left: "\e93f";
+@fpui-expand-right: "\e940";
+@fpui-angle-double-left: "\e941";
+@fpui-angle-double-right: "\e942";
+@fpui-angle-double-down: "\e943";
+@fpui-angle-double-up: "\e944";
+@fpui-move: "\e945";
+@fpui-deploy: "\e946";
+@fpui-download: "\e947";
+@fpui-line-chart: "\e948";
+@fpui-spline-chart: "\e949";
+@fpui-area-chart: "\e94a";
+@fpui-area-spline-chart: "\e94b";
+@fpui-bar-chart: "\e94c";
+@fpui-column-chart: "\e94d";
+@fpui-scatter-chart: "\e94e";
+@fpui-bubble-chart: "\e94f";
+@fpui-pie-chart: "\e950";
+@fpui-spiderweb-chart: "\e951";
+@fpui-donut-chart: "\e952";
+@fpui-table-chart: "\e953";
+@fpui-value-chart: "\e954";
+
+@font-face {
+  font-family: 'forepaas-icons';
+  src:  url('./forepaas-icons.eot?bvan9n');
+  src:  url('./forepaas-icons.eot?bvan9n#iefix') format('embedded-opentype'),
+    url('./forepaas-icons.ttf?bvan9n') format('truetype'),
+    url('./forepaas-icons.woff?bvan9n') format('woff'),
+    url('./forepaas-icons.svg?bvan9n#forepaas-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fpui, i.fp {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'forepaas-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.45;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.fpui-2x, .fp-2x {
+    font-size: 240%;
+  }
+  &.fpui-3x, .fp-3x {
+    font-size: 360%;
+  }
+  &.fpui-4x, .fp-4x {
+    font-size: 480%;
+  }
+}
+
+.fpui-plus, i.fp-plus {
+  &:before {
+    content: @fpui-plus;
+  }
+}
+.fpui-check-circle, i.fp-check-circle {
+  &:before {
+    content: @fpui-check-circle;
+  }
+}
+.fpui-power, i.fp-power {
+  &:before {
+    content: @fpui-power;
+  }
+}
+.fpui-ask, i.fp-ask {
+  &:before {
+    content: @fpui-ask;
+  }
+}
+.fpui-chevron-down-small, i.fp-chevron-down-small {
+  &:before {
+    content: @fpui-chevron-down-small;
+  }
+}
+.fpui-bell, i.fp-bell {
+  &:before {
+    content: @fpui-bell;
+  }
+}
+.fpui-cog, i.fp-cog {
+  &:before {
+    content: @fpui-cog;
+  }
+}
+.fpui-speaker, i.fp-speaker {
+  &:before {
+    content: @fpui-speaker;
+  }
+}
+.fpui-exclamation, i.fp-exclamation {
+  &:before {
+    content: @fpui-exclamation;
+  }
+}
+.fpui-exclamation-triangle, i.fp-exclamation-triangle {
+  &:before {
+    content: @fpui-exclamation-triangle;
+  }
+}
+.fpui-gauge, i.fp-gauge {
+  &:before {
+    content: @fpui-gauge;
+  }
+}
+.fpui-note, i.fp-note {
+  &:before {
+    content: @fpui-note;
+  }
+}
+.fpui-settings, i.fp-settings {
+  &:before {
+    content: @fpui-settings;
+  }
+}
+.fpui-workflow, i.fp-workflow {
+  &:before {
+    content: @fpui-workflow;
+  }
+}
+.fpui-target, i.fp-target {
+  &:before {
+    content: @fpui-target;
+  }
+}
+.fpui-play, i.fp-play {
+  &:before {
+    content: @fpui-play;
+  }
+}
+.fpui-pencil, i.fp-pencil {
+  &:before {
+    content: @fpui-pencil;
+  }
+}
+.fpui-trash, i.fp-trash {
+  &:before {
+    content: @fpui-trash;
+  }
+}
+.fpui-required, i.fp-required {
+  &:before {
+    content: @fpui-required;
+  }
+}
+.fpui-calendar, i.fp-calendar {
+  &:before {
+    content: @fpui-calendar;
+  }
+}
+.fpui-chevron-right, i.fp-chevron-right {
+  &:before {
+    content: @fpui-chevron-right;
+  }
+}
+.fpui-chevron-left, i.fp-chevron-left {
+  &:before {
+    content: @fpui-chevron-left;
+  }
+}
+.fpui-chevron-down, i.fp-chevron-down {
+  &:before {
+    content: @fpui-chevron-down;
+  }
+}
+.fpui-chevron-up, i.fp-chevron-up {
+  &:before {
+    content: @fpui-chevron-up;
+  }
+}
+.fpui-check, i.fp-check {
+  &:before {
+    content: @fpui-check;
+  }
+}
+.fpui-remove, i.fp-remove {
+  &:before {
+    content: @fpui-remove;
+  }
+}
+.fpui-agent, i.fp-agent {
+  &:before {
+    content: @fpui-agent;
+  }
+}
+.fpui-leader, i.fp-leader {
+  &:before {
+    content: @fpui-leader;
+  }
+}
+.fpui-information-circle, i.fp-information-circle {
+  &:before {
+    content: @fpui-information-circle;
+  }
+}
+.fpui-refresh, i.fp-refresh {
+  &:before {
+    content: @fpui-refresh;
+  }
+}
+.fpui-dots, i.fp-dots {
+  &:before {
+    content: @fpui-dots;
+  }
+}
+.fpui-search, i.fp-search {
+  &:before {
+    content: @fpui-search;
+  }
+}
+.fpui-collect, i.fp-collect {
+  &:before {
+    content: @fpui-collect;
+  }
+}
+.fpui-analyze, i.fp-analyze {
+  &:before {
+    content: @fpui-analyze;
+  }
+}
+.fpui-organize, i.fp-organize {
+  &:before {
+    content: @fpui-organize;
+  }
+}
+.fpui-folder-open, i.fp-folder-open {
+  &:before {
+    content: @fpui-folder-open;
+  }
+}
+.fpui-file, i.fp-file {
+  &:before {
+    content: @fpui-file;
+  }
+}
+.fpui-list, i.fp-list {
+  &:before {
+    content: @fpui-list;
+  }
+}
+.fpui-eye, i.fp-eye {
+  &:before {
+    content: @fpui-eye;
+  }
+}
+.fpui-eye-closed, i.fp-eye-closed {
+  &:before {
+    content: @fpui-eye-closed;
+  }
+}
+.fpui-folder, i.fp-folder {
+  &:before {
+    content: @fpui-folder;
+  }
+}
+.fpui-attachment, i.fp-attachment {
+  &:before {
+    content: @fpui-attachment;
+  }
+}
+.fpui-arrow-up, i.fp-arrow-up {
+  &:before {
+    content: @fpui-arrow-up;
+  }
+}
+.fpui-padlock, i.fp-padlock {
+  &:before {
+    content: @fpui-padlock;
+  }
+}
+.fpui-dots-o, i.fp-dots-o {
+  &:before {
+    content: @fpui-dots-o;
+  }
+}
+.fpui-menu, i.fp-menu {
+  &:before {
+    content: @fpui-menu;
+  }
+}
+.fpui-stages, i.fp-stages {
+  &:before {
+    content: @fpui-stages;
+  }
+}
+.fpui-map, i.fp-map {
+  &:before {
+    content: @fpui-map;
+  }
+}
+.fpui-link, i.fp-link {
+  &:before {
+    content: @fpui-link;
+  }
+}
+.fpui-language, i.fp-language {
+  &:before {
+    content: @fpui-language;
+  }
+}
+.fpui-palette, i.fp-palette {
+  &:before {
+    content: @fpui-palette;
+  }
+}
+.fpui-graph-chart, i.fp-graph-chart {
+  &:before {
+    content: @fpui-graph-chart;
+  }
+}
+.fpui-id-card, i.fp-id-card {
+  &:before {
+    content: @fpui-id-card;
+  }
+}
+.fpui-module, i.fp-module {
+  &:before {
+    content: @fpui-module;
+  }
+}
+.fpui-chart-pie-chart, i.fp-chart-pie-chart {
+  &:before {
+    content: @fpui-chart-pie-chart;
+  }
+}
+.fpui-html, i.fp-html {
+  &:before {
+    content: @fpui-html;
+  }
+}
+.fpui-panel, i.fp-panel {
+  &:before {
+    content: @fpui-panel;
+  }
+}
+.fpui-filter, i.fp-filter {
+  &:before {
+    content: @fpui-filter;
+  }
+}
+.fpui-formatter, i.fp-formatter {
+  &:before {
+    content: @fpui-formatter;
+  }
+}
+.fpui-chart-padlock, i.fp-chart-padlock {
+  &:before {
+    content: @fpui-chart-padlock;
+  }
+}
+.fpui-snapshot, i.fp-snapshot {
+  &:before {
+    content: @fpui-snapshot;
+  }
+}
+.fpui-resize-vertical, i.fp-resize-vertical {
+  &:before {
+    content: @fpui-resize-vertical;
+  }
+}
+.fpui-resize-horizontal, i.fp-resize-horizontal {
+  &:before {
+    content: @fpui-resize-horizontal;
+  }
+}
+.fpui-expand-left, i.fp-expand-left {
+  &:before {
+    content: @fpui-expand-left;
+  }
+}
+.fpui-expand-right, i.fp-expand-right {
+  &:before {
+    content: @fpui-expand-right;
+  }
+}
+.fpui-angle-double-left, i.fp-angle-double-left {
+  &:before {
+    content: @fpui-angle-double-left;
+  }
+}
+.fpui-angle-double-right, i.fp-angle-double-right {
+  &:before {
+    content: @fpui-angle-double-right;
+  }
+}
+.fpui-angle-double-down, i.fp-angle-double-down {
+  &:before {
+    content: @fpui-angle-double-down;
+  }
+}
+.fpui-angle-double-up, i.fp-angle-double-up {
+  &:before {
+    content: @fpui-angle-double-up;
+  }
+}
+.fpui-move, i.fp-move {
+  &:before {
+    content: @fpui-move;
+  }
+}
+.fpui-deploy, i.fp-deploy {
+  &:before {
+    content: @fpui-deploy;
+  }
+}
+.fpui-download, i.fp-download {
+  &:before {
+    content: @fpui-download;
+  }
+}
+.fpui-line-chart, i.fp-line-chart {
+  &:before {
+    content: @fpui-line-chart;
+  }
+}
+.fpui-spline-chart, i.fp-spline-chart {
+  &:before {
+    content: @fpui-spline-chart;
+  }
+}
+.fpui-area-chart, i.fp-area-chart {
+  &:before {
+    content: @fpui-area-chart;
+  }
+}
+.fpui-area-spline-chart, i.fp-area-spline-chart {
+  &:before {
+    content: @fpui-area-spline-chart;
+  }
+}
+.fpui-bar-chart, i.fp-bar-chart {
+  &:before {
+    content: @fpui-bar-chart;
+  }
+}
+.fpui-column-chart, i.fp-column-chart {
+  &:before {
+    content: @fpui-column-chart;
+  }
+}
+.fpui-scatter-chart, i.fp-scatter-chart {
+  &:before {
+    content: @fpui-scatter-chart;
+  }
+}
+.fpui-bubble-chart, i.fp-bubble-chart {
+  &:before {
+    content: @fpui-bubble-chart;
+  }
+}
+.fpui-pie-chart, i.fp-pie-chart {
+  &:before {
+    content: @fpui-pie-chart;
+  }
+}
+.fpui-spiderweb-chart, i.fp-spiderweb-chart {
+  &:before {
+    content: @fpui-spiderweb-chart;
+  }
+}
+.fpui-donut-chart, i.fp-donut-chart {
+  &:before {
+    content: @fpui-donut-chart;
+  }
+}
+.fpui-table-chart, i.fp-table-chart {
+  &:before {
+    content: @fpui-table-chart;
+  }
+}
+.fpui-value-chart, i.fp-value-chart {
+  &:before {
+    content: @fpui-value-chart;
+  }
+}

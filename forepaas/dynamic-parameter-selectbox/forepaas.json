@@ -1,0 +1,117 @@
+{
+  "name": "dynamic-parameter-selectbox",
+  "version": "3.0.0",
+  "description": "A simple select",
+  "id": "selectbox",
+  "type": "dynamic-parameter",
+  "main": "index.js",
+  "displays": [
+    {
+      "id": "selectbox",
+      "name": "Select box",
+      "category": "select-box",
+      "icon": "fpui fpui-line-chart",
+      "description": "Select-box liée au QB ou à un scale",
+      "options": {
+        "type": {
+          "tooltip": "dynamic_parameter.select_box.type.tooltip",
+          "label": "dynamic_parameter.select_box.type",
+          "type": "select-box",
+          "default": "filter",
+          "options": [
+            "filter",
+            "scale"
+          ]
+        },
+        "placeholder": {
+          "tooltip": "dynamic_parameter.select_box.placeholder.tooltip",
+          "label": "dynamic_parameter.select_box.placeholder",
+          "type": "input-text"
+        },
+        "dictionary": {
+          "tooltip": "dynamic_parameter.select_box.dictionary.tooltip",
+          "label": "dynamic_parameter.select_box.dictionary",
+          "type": "select-qb-filter",
+          "default": null,
+          "if": "function(){ return this.type === 'filter'}"
+        },
+        "reference": {
+          "tooltip": "dynamic_parameter.select_box.reference.tooltip",
+          "label": "dynamic_parameter.select_box.reference",
+          "type": "hidden",
+          "default": null,
+          "if": "function(){ return this.type === 'filter'}"
+        },
+        "sortBy": {
+          "tooltip": "tooltip.sort_by",
+          "label": "dynamic_parameter.select_box.sort_by",
+          "type": "select-box",
+          "default": "label",
+          "options": [
+            "none",
+            "label",
+            "value"
+          ]
+        },
+        "items": {
+          "tooltip": "dynamic_parameter.select_box.items.tooltip",
+          "label": "dynamic_parameter.select_box.items",
+          "type": "array",
+          "options": {
+            "type": "object",
+            "options": {
+              "label": {
+                "label": "label",
+                "type": "input-text"
+              },
+              "value": {
+                "label": "value",
+                "type": "input-text"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "i18n": {
+    "fr": {
+      "dynamic_parameter.select_box.type": "Type de select",
+      "dynamic_parameter.select_box.type.tooltip": "Type de select",
+      "dynamic_parameter.select_box.placeholder.tooltip": "Placeholder",
+      "dynamic_parameter.select_box.placeholder": "Placeholder",
+      "dynamic_parameter.select_box.dictionary": "Dictionnaire",
+      "dynamic_parameter.select_box.dictionary.tooltip": "Dictionnaire",
+      "dynamic_parameter.select_box.reference": "Reference",
+      "dynamic_parameter.select_box.reference.tooltip": "Reference",
+      "dynamic_parameter.select_box.items": "Éléments",
+      "dynamic_parameter.select_box.items.tooltip": "Éléments",
+      "dynamic_parameter.select_box.scales": "Scales",
+      "dynamic_parameter.select_box.sort_by": "Trier par"
+    },
+    "en": {
+      "dynamic_parameter.select_box.type": "Select type",
+      "dynamic_parameter.select_box.type.tooltip": "Select type",
+      "dynamic_parameter.select_box.placeholder.tooltip": "Placeholder",
+      "dynamic_parameter.select_box.placeholder": "Placeholder",
+      "dynamic_parameter.select_box.dictionary": "Dictionary",
+      "dynamic_parameter.select_box.dictionary.tooltip": "Dictionary",
+      "dynamic_parameter.select_box.reference": "Reference",
+      "dynamic_parameter.select_box.reference.tooltip": "Reference",
+      "dynamic_parameter.select_box.items": "Items",
+      "dynamic_parameter.select_box.items.tooltip": "Items",
+      "dynamic_parameter.select_box.scales": "Scales",
+      "dynamic_parameter.select_box.sort_by": "Sort by"
+    }
+  },
+  "dependencies": {
+    "sdk": {},
+    "store": {},
+    "translate": {}
+  },
+  "npmDependencies": {
+    "react": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-select": "^3.0.4"
+  }
+}

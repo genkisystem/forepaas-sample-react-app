@@ -1,0 +1,17 @@
+{
+  "name": "Network",
+  "url": "/network",
+  "path": "",
+  "type": "dashboard",
+  "description": "",
+  "controller": "",
+  "width": 100,
+  "height": 100,
+  "margin": [
+    10,
+    10
+  ],
+  "tags": [],
+  "id": "newChart-8555240",
+  "items": []
+}

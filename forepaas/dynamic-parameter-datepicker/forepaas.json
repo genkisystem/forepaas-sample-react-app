@@ -1,0 +1,181 @@
+{
+  "name": "Simple Datepicker",
+  "version": "2.2.0",
+  "description": "A simple datepicker",
+  "id": "dynamic-parameter-datepicker",
+  "type": "dynamic-parameter",
+  "main": "index.js",
+  "displays": [
+    {
+      "id": "datepicker",
+      "name": "Datepicker range",
+      "category": "datepicker",
+      "icon": "fpui fpui-calendar",
+      "options": {
+        "type": {
+          "type": "hidden",
+          "value": "filter"
+        },
+        "reference": {
+          "tooltip": "dynamic_parameter.reference.tooltip",
+          "label": "dynamic_parameter.reference",
+          "type": "select-qb-filter-range"
+        },
+        "ranges": {
+          "label": "label.ranges",
+          "type": "datepicker-select-ranges"
+        },
+        "minDate": {
+          "label": "label.mindate",
+          "type": "datepicker-ranges"
+        },
+        "maxDate": {
+          "label": "label.maxdate",
+          "type": "datepicker-ranges"
+        },
+        "startAt": {
+          "label": "label.startat",
+          "type": "datepicker-ranges"
+        },
+        "endAt": {
+          "label": "label.endat",
+          "type": "datepicker-ranges"
+        }
+      }
+    },
+    {
+      "id": "datepicker.day",
+      "name": "Datepicker : pick a day",
+      "category": "datepicker",
+      "icon": "fpui fpui-calendar",
+      "options": {
+        "type": {
+          "type": "hidden",
+          "value": "filter"
+        },
+        "reference": {
+          "tooltip": "dynamic_parameter.reference.tooltip",
+          "label": "dynamic_parameter.reference",
+          "type": "select-qb-filter-range"
+        },
+        "minDate": {
+          "label": "label.mindate",
+          "type": "datepicker-ranges"
+        },
+        "maxDate": {
+          "label": "label.maxdate",
+          "type": "datepicker-ranges"
+        },
+        "startAt": {
+          "label": "label.startat",
+          "type": "datepicker-ranges"
+        },
+        "endAt": {
+          "label": "label.endat",
+          "type": "datepicker-ranges"
+        }
+      }
+    },
+    {
+      "id": "datepicker.months",
+      "name": "Month range picker",
+      "category": "datepicker",
+      "icon": "fpui fpui-calendar",
+      "options": {
+        "type": {
+          "type": "hidden",
+          "value": "filter"
+        },
+        "reference": {
+          "tooltip": "dynamic_parameter.reference.tooltip",
+          "label": "dynamic_parameter.reference",
+          "type": "select-qb-filter-range"
+        },
+        "minDate": {
+          "label": "label.mindate",
+          "type": "datepicker-ranges"
+        },
+        "maxDate": {
+          "label": "label.maxdate",
+          "type": "datepicker-ranges"
+        },
+        "startAt": {
+          "label": "label.startat",
+          "type": "datepicker-ranges"
+        },
+        "endAt": {
+          "label": "label.endat",
+          "type": "datepicker-ranges"
+        }
+      }
+    },
+    {
+      "id": "datepicker.month",
+      "name": "Month picker : pick a month",
+      "category": "datepicker",
+      "icon": "fpui fpui-calendar",
+      "options": {
+        "type": {
+          "type": "hidden",
+          "value": "filter"
+        },
+        "reference": {
+          "tooltip": "dynamic_parameter.reference.tooltip",
+          "label": "dynamic_parameter.reference",
+          "type": "select-qb-filter-range"
+        },
+        "minDate": {
+          "label": "label.mindate",
+          "type": "datepicker-ranges"
+        },
+        "maxDate": {
+          "label": "label.maxdate",
+          "type": "datepicker-ranges"
+        },
+        "startAt": {
+          "label": "label.startat",
+          "type": "datepicker-ranges"
+        },
+        "endAt": {
+          "label": "label.endat",
+          "type": "datepicker-ranges"
+        }
+      }
+    }
+  ],
+  "i18n": {
+    "fr": {
+      "dynamic_parameter.reference": "Attribut de réference",
+      "dynamic_parameter.reference.tooltip": "Reference sélectionner dans le query builder",
+      "label.ranges": "Écarts de temps",
+      "label.mindate": "Date minimum",
+      "label.maxdate": "Date maximum",
+      "label.startat": "Date de début par défaut",
+      "label.endat": "Date de fin par défaut"
+    },
+    "en": {
+      "dynamic_parameter.reference": "Reference Attribute",
+      "dynamic_parameter.reference.tooltip": "Reference to select from the query builde",
+      "label.ranges": "Time Gaps",
+      "label.mindate": "Minimum Date",
+      "label.maxdate": "Maximum Date",
+      "label.startat": "Default Start Date",
+      "label.endat": "Default End Date"
+    }
+  },
+  "dependencies": {
+    "sdk": {},
+    "store": {},
+    "translate": {}
+  },
+  "npmDependencies": {
+    "lodash": "^4.17.4",
+    "moment": "2.29.1",
+    "moment-timezone": "0.5.31",
+    "react": "^16.13.1",
+    "react-date-range": "1.1.3",
+    "react-dom": "^16.13.1",
+    "react-month-picker": "^1.3.5",
+    "react-redux": "^5.0.6"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Chart",
+  "test": "Check tag",
+  "version": "2.0.0",
+  "description": "Cette extension est coeur, il permet de charger un graph.",
+  "main": "index.js",
+  "type": "chart",
+  "dependencies": {
+    "core-ui": {},
+    "query-builder": {},
+    "sdk": {},
+    "translate": {}
+  },
+  "displays": [
+    {
+      "id": "html",
+      "name": "Html",
+      "category": "html",
+      "icon": "fa fa-html5",
+      "description": "Html chart module",
+      "options": {
+        "template-name": {
+          "label": "chart.html.template_name.label",
+          "tooltip": "chart.html.template_name.tooltip",
+          "type": "select-box",
+          "default": "own",
+          "options": [
+            {
+              "value": "block",
+              "label": "chart.html.template_name.block"
+            },
+            {
+              "value": "evol",
+              "label": "chart.html.template_name.evol"
+            },
+            {
+              "value": "own",
+              "label": "chart.html.template_name.own"
+            }
+          ]
+        },
+        "template": {
+          "if": "function(){ return this['template-name'] === 'own'}",
+          "label": "chart.html.template.label",
+          "tooltip": "chart.html.template.tooltip",
+          "type": "html"
+        },
+        "text": {
+          "if": "function(){ return this['template-name'] === 'block' || this['template-name'] === 'evol'}",
+          "label": "chart.html.text.label",
+          "tooltip": "chart.html.text.tooltip",
+          "type": "input-text"
+        },
+        "icon": {
+          "if": "function(){ return this['template-name'] === 'block' || this['template-name'] === 'evol'}",
+          "label": "chart.html.icon.label",
+          "tooltip": "chart.html.icon.tooltip",
+          "type": "icon"
+        }
+      }
+    }
+  ],
+  "i18n": {
+    "fr": {
+      "long_description": "Cette extension est coeur, il permet de charger un graphe au sein des différentes extensions. Il chargera la bibliothèque graphique souhaité (Echarts, Google Chart, ChartJS, etc…) Il effectua la requête à votre Api en fonction des paramètres demandés. Les changements nécessaires seront effectués à la mise à jour des paramètres dynamiques.",
+      "name": "Graphique",
+      "description": "Cette extension est coeur, il permet de charger un graph."
+    },
+    "en": {
+      "description": "This is a core module for your application to function properly.",
+      "name": "Chart",
+      "long_description": "This is a core module for your application to function properly. You can show graphs with it. It will load the graphical library (Echarts, Google Chart, ChartJS, etc…) and make the request to your Api. In addition it will reload all your chart in case of an update in your Dynamic Parameters."
+    }
+  },
+  "npmDependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-redux": "^5.0.6"
+  },
+  "long_description": "This is a core module for your application to function properly. You can show graphs with it. It will load the graphical library (Echarts, Google Chart, ChartJS, etc…) and make the request to your Api. In addition it will reload all your chart in case of an update in your Dynamic Parameters.",
+  "category": "Other",
+  "repository": "https://gitlab.forepaas.com/open-sources/fapp-mod-chart.git"
+}

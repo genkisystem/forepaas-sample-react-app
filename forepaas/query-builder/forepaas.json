@@ -1,0 +1,12 @@
+{
+  "name": "sdk",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "api": {}
+  },
+  "npmDependencies": {
+    "lodash": "^4.17.4"
+  }
+}
